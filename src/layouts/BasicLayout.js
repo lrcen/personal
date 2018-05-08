@@ -177,7 +177,7 @@ class BasicLayout extends React.PureComponent {
     } = this.props;
     const layout = (
       <Layout>
-        <Content style={{ margin: '24px 24px 0', height: '100%' }}>
+        <Content style={{ height: '100%' }}>
           <Switch>
             {children}
           </Switch>

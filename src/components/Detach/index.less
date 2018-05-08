@@ -1,0 +1,31 @@
+@import '../../theme.less';
+.detach {
+  text-align: center;
+  position: relative;
+  transition: padding-bottom 0.2s linear, transform 0.2s linear;
+  .matrix {
+    color: @theme-color;
+  }
+  .detached {
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    color: rgba(85, 98, 112, 0.6);
+    transition: opacity 0.2s linear;
+  }
+}
+.detach.left {
+  text-align: left;
+}
+.detach.right {
+  text-align: right;
+}
+.detach:hover {
+  padding-bottom: 1.5em;
+  transform: translateY(-5px);
+  .detached {
+    opacity: 1;
+  }
+}
